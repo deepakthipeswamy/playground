@@ -3,6 +3,8 @@
  */
 package sort;
 
+import java.util.Arrays;
+
 /**
  * @author Deepak
  *
@@ -12,17 +14,6 @@ public class InsertionSort {
 		// TODO Auto-generated method stub
 
 		int[] arr = { 8, 10, 2, 7, 4, 9 };
-		int x = 5;
-		int output[] = insertionSort(arr);
-
-		for (int k = 0; k < output.length; k++) {
-			System.out.println(output[k]);
-		}
-	}
-
-	private static int[] insertionSort(int[] arr) {
-		// TODO Auto-generated method stub
-
 		int key = 0;
 		int j = 0;
 		for (int i = 1; i < arr.length; i++) {
@@ -33,8 +24,8 @@ public class InsertionSort {
 				j = j - 1;
 			}
 			arr[j + 1] = key;
+			System.out.println(Arrays.toString(arr));
 		}
 
-		return arr;
 	}
 }

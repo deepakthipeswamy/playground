@@ -27,14 +27,15 @@ public class SelectionSort {
 	private static int[] selectionSort(int[] arr) {
 		// TODO Auto-generated method stub
 
-		int index = 0;
+		int min = 0;
 		for (int i = 0; i < arr.length - 1; i++) {
-			index = i;
+			min = i;
 			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[index] > arr[j]) {
-					swap(arr, index, j);
+				if (arr[min] > arr[j]) {
+					min = j;
 				}
 			}
+			swap(arr, i, min);
 		}
 
 		return arr;

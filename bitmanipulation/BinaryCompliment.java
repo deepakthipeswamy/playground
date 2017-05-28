@@ -1,4 +1,4 @@
-package basic;
+package bitmanipulation;
 
 public class BinaryCompliment {
 
